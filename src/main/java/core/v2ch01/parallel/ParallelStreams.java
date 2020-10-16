@@ -1,9 +1,5 @@
-package parallel;
+package core.v2ch01.parallel;
 
-/**
- * @version 1.01 2018-05-01
- * @author Cay Horstmann
- */
 
 import static java.util.stream.Collectors.*;
 
@@ -13,12 +9,17 @@ import java.nio.file.*;
 import java.util.*;
 import java.util.stream.*;
 
+/**
+ * @author Chris Chen https://blog.kyocoolcool.com
+ * @version 1.0
+ * @since 2020/10/16 4:04 PM
+ **/
 public class ParallelStreams
 {
    public static void main(String[] args) throws IOException
    {
       var contents = new String(Files.readAllBytes(
-         Paths.get("../gutenberg/alice30.txt")), StandardCharsets.UTF_8);
+         Paths.get("alice30.txt")), StandardCharsets.UTF_8);
       List<String> wordList = List.of(contents.split("\\PL+"));
 
       // Very bad code ahead

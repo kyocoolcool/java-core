@@ -1,15 +1,17 @@
-package streams;
+package core.v2ch01.streams;
 
-/**
- * @version 1.01 2018-05-01
- * @author Cay Horstmann
- */
+
 
 import java.io.*;
 import java.nio.charset.*;
 import java.nio.file.*;
 import java.util.*;
 
+/**
+ * @author Chris Chen https://blog.kyocoolcool.com
+ * @version 1.0
+ * @since 2020/10/16 4:04 PM
+ **/
 public class CountLongWords
 {
    public static void main(String[] args) throws IOException

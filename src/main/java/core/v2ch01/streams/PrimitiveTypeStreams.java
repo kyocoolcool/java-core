@@ -1,9 +1,4 @@
-package streams;
-
-/**
- * @version 1.01 2018-05-01
- * @author Cay Horstmann
- */
+package core.v2ch01.streams;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -14,6 +9,11 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+/**
+ * @author Chris Chen https://blog.kyocoolcool.com
+ * @version 1.0
+ * @since 2020/10/16 4:04 PM
+ **/
 public class PrimitiveTypeStreams
 {
    public static void show(String title, IntStream stream)
@@ -39,7 +39,7 @@ public class PrimitiveTypeStreams
       IntStream is3 = IntStream.rangeClosed(5, 10);
       show("is3", is3);
 
-      Path path = Paths.get("../gutenberg/alice30.txt");
+      Path path = Paths.get("alice30.txt");
       var contents = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
 
       Stream<String> words = Stream.of(contents.split("\\PL+"));
@@ -49,7 +49,7 @@ public class PrimitiveTypeStreams
       System.out.println(sentence);
       IntStream codes = sentence.codePoints();
       System.out.println(codes.mapToObj(c -> String.format("%X ", c)).collect(
-         Collectors.joining()));
+              Collectors.joining()));
 
       Stream<Integer> integers = IntStream.range(0, 100).boxed();
       IntStream is5 = integers.mapToInt(Integer::intValue);

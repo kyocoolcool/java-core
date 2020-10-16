@@ -1,4 +1,4 @@
-package streams;
+package core.v2ch01.streams;
 
 /**
  * @version 1.01 2018-05-01
@@ -13,6 +13,11 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.*;
 
+/**
+ * @author Chris Chen https://blog.kyocoolcool.com
+ * @version 1.0
+ * @since 2020/10/16 4:04 PM
+ **/
 public class CreatingStreams
 {
    public static <T> void show(String title, Stream<T> stream)
