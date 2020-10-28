@@ -1,9 +1,5 @@
 package core.v2ch01.streams;
 
-/**
- * @version 1.01 2018-05-01
- * @author Cay Horstmann
- */
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -39,7 +35,7 @@ public class CreatingStreams
    public static void main(String[] args) throws IOException
    {
       Path path = Paths.get("../gutenberg/alice30.txt");
-      var contents = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
+      var contents = Files.readString(path);
 
       Stream<String> words = Stream.of(contents.split("\\PL+"));
       show("words", words);

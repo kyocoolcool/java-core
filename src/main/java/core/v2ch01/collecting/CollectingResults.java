@@ -14,7 +14,7 @@ import java.util.stream.*;
 public class CollectingResults {
     public static Stream<String> noVowels() throws IOException {
         var contents = new String(Files.readAllBytes(
-                Paths.get("test.txt")),
+                Paths.get("test")),
                 StandardCharsets.UTF_8);
         List<String> wordList = List.of(contents.split("\\PL+"));
         Stream<String> words = wordList.stream();
