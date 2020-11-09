@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<nba xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns="http://www.w3school.com.cn"
+     xsi:schemaLocation="http://www.w3school.coom.cn2 test4.xsd">
+    <star>
+        <name>chris</name>
+        <no>1</no>
+    </star>
+    <star>
+        <name>liu</name>
+        <no>11</no>
+    </star>
+</nba>

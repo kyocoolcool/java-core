@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE students SYSTEM "test1.tdd">
+<students>
+    <student>
+        <name>chris</name>
+        <age>20</age>
+    </student>
+    <student>
+        <name>nick</name>
+        <age>18</age>
+    </student>
+</students>
