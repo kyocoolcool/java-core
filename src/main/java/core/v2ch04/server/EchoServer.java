@@ -24,9 +24,13 @@ public class EchoServer {
                     while (!done && in.hasNextLine()) {
                         final String line = in.nextLine();
                         out.println("Echo:" + line);
+                        Thread.sleep(10000);
+                        out.println("aaaaaa");
                         if (line.trim().equals("BYE"))
                             done = true;
                     }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
         }
